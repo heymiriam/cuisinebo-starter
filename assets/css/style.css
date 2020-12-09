@@ -1,0 +1,509 @@
+/*
+Orange color: #e67e22
+
+---Typography---
+Recommended font-size for headers: 2.4em / 240% / 90px (or between 60px-90px)
+Recommended font-size for regular text: 22px (or between 15px - 25px)
+Recommended line-spacing: 150% (or between 120% - 150%)
+Recommended characters per line: 45-90 characters
+*/
+
+
+/* ----------------------------------------------- */
+/* BASIC SETUP */
+/* ----------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* ----------------------------------------------- */
+/* HEADER */
+/* ----------------------------------------------- */
+
+header {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/hero.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/hero.jpg);
+    background-size: cover;
+    background-position: top center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+.icon-big{
+    color:orange;
+    font-size:60px;
+}
+.row, .hero-text-box{
+    margin:auto;
+    width:90%;
+}
+
+
+.logo{
+    width: 8%;
+    margin:2% 5%;
+    float:left;
+}
+
+.logo-black{
+    display:none;
+}
+
+.main-nav{
+    float:right;
+    width:55%;
+}
+
+.main-nav li{
+ list-style-type: none;
+ float:left;
+ padding-right:5%;
+ margin-top:10%;
+ 
+}
+
+li a{
+    text-decoration:none;
+    color:white;
+    text-transform: uppercase;
+}
+
+h1{
+    margin:15% 5% 3% 5%;
+    color:white;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+#button1, .btn-full{
+    background-color:orange;
+    color:white;
+    
+}
+.btn-full, .btn-ghost{
+    margin-left:5%;
+}
+
+#button2, .btn-ghost{
+    border:1px solid orange;
+    color:orange;
+    margin-left:1%;
+}
+
+.btn{
+    text-decoration:none;
+    padding:10px 30px;
+    border-radius: 100px;
+}
+
+h2{
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 7% auto 2%;
+    text-align: center;
+}
+
+.s-line{
+    background-color:orange;
+    border:orange solid 1px;
+    width:10%;
+    height: 1%;
+    margin:auto;
+}
+
+.long-copy{
+    margin: 3% auto 0 auto;
+    width:70%;
+}
+
+h3{
+    font-weight: 300;
+    font-size:100%;
+    text-transform: uppercase;
+    margin-bottom:10px;
+}
+
+.box{
+    margin:5% 2%;
+    width:21%;
+}
+
+.section-meals{
+    width:100%;
+}
+.section-meals ul{
+    width:100%;
+    margin:auto;
+}
+
+.section-meals li{
+    width:25%;
+    list-style-type: none;
+}
+
+.meal-photo {
+    width:100%;
+    
+}
+
+.meal-photo{
+    float:left;
+    display:inline;
+    margin:auto 0;
+  
+}
+
+.section-meals li{
+    float:left;
+}
+li img{
+    width:100%;
+    display:inline;
+    float:left;
+    margin:0px;
+}
+
+
+.section-meals ul{
+    height:100%;
+    width:100%;
+    float:left;
+
+}
+.section-meals ul:last-child{
+    margin-bottom:70px;
+}
+
+li{
+    text-decoration:none;
+    text-transform: none;
+}
+
+
+
+.app-screen{
+    margin-top:80px;
+    width:35%;
+    margin:40px 60% 0px 60%;
+}
+
+.works-step div{
+    border:orange solid 1px;
+    border-radius: 100px;
+    padding:5px 11px;
+    color:orange; 
+    display:inline-block;
+    float:left;
+}
+
+.works-step p{
+    float:left;
+    display:inline;
+    padding:0 2%;
+    font-size:16px;
+    width:65%;
+}
+
+.works-step:first-child{
+    margin-top:120px;
+}
+
+.works-step{
+    margin-top:40px;
+}
+
+.works-step p{
+    margin-top:0px;
+}
+
+#features{
+    margin:5% 5%;
+}
+
+.city-feature i{
+    color:orange;
+}
+
+
+
+.btn-app img{
+    margin-top:60px;
+}
+
+.btn-2 img{
+    width:20.5%;
+    margin-left:1%;
+}
+
+.box img{
+    width:100%;
+    margin:auto;
+}
+
+.box i{
+    margin-right:10px;
+}
+
+.box a{
+    color:orange;
+}
+
+.box h3{
+    margin-top:15px;
+    margin-bottom:10px;
+}
+
+
+.section-testimonials{
+    position:relative;
+    background-image:url(../img/back-customers.jpg);
+    background-size: 150%;
+    background-position:left top;
+    color:white;
+    padding:auto;
+     
+}
+
+.section-testimonials:after{
+    content: '';
+    top:0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    position:absolute;
+    background-color: rgba(0, 0, 0, 0.75);
+
+}
+
+.section-testimonials h2, hr, blockquote{
+    position:relative;
+    z-index: 1;
+    color: white;
+}
+
+.section-testimonials h2{
+    margin-top:70px;
+}
+
+blockquote{
+    font-style: italic;
+    margin-top:10px;
+    width:95%;
+    margin-left:5%;
+    margin-right:5%;
+
+}
+cite img{
+    border-radius: 100px;
+    width:15%;
+    float:left;
+    margin-bottom:70px;
+    margin-right:20px;
+    vertical-align:bottom;
+}
+cite{
+    float:left;
+    margin-top:30px;
+}
+
+.q-mark{
+   font-style:bolder;
+   font-size:100px;
+    height:60px;
+}
+
+cite span{
+    margin-top:2%;
+}
+
+#plans{
+    background-color:rgb(242, 242, 242);
+}
+
+#plans h2{
+    margin-top:60px;
+}
+
+.plan-box div:first-child{ 
+    background-color:rgb(248, 248, 248);
+    border-radius: 5px 5px 0 0; 
+    border-bottom: 0.5px solid rgb(233, 233, 233);
+}
+
+
+.plan-box div{
+    width:80%;
+    margin:auto;
+    padding:10px 5% 0 5%;
+    background-color:white;
+    
+}
+
+
+.plan-box div:last-child{
+    border-radius: 0 0 5px 5px; 
+}
+
+#plans hr{
+    margin-bottom:35px;
+}
+
+#plans ul{
+    list-style-type: none;
+}
+
+.plan-price{
+    color:orange;
+    font-size:50px;
+    font-weight:200;
+    
+}
+
+.plan-price span{
+    font-size:18px;
+}
+
+.plan-box:last-child{
+    margin-left:0px;
+}
+
+.plan-price-meal{
+    font-size:15px;
+    margin-top:10px;
+    padding-bottom:10px;
+}
+
+.icon-small{
+  margin-right:20px;
+  
+}
+
+.plan-box ul{
+    padding-top:10px;
+    padding-bottom:15px;
+  
+}
+
+.plan-box div:last-child{
+    border-top: 0.5px solid rgb(233, 233, 233);
+}
+
+.plan-box .btn{
+    margin:0px 18%;
+}
+
+.plan-box div:last-child{
+    height:80px;
+    padding-top:30px;
+    margin-bottom:50px;
+}
+
+.lab{
+    margin-left:70%;
+    margin-right:0;
+ 
+}
+label{
+    margin-left:40%;
+}
+
+input, select{
+ height:35px;
+ 
+}
+textarea{
+    padding-top:5px;
+}
+input, select, textarea{
+    width:60%; 
+    border: 0.5px solid rgb(233, 233, 233);
+    border-radius: 5px;
+}
+
+#news{
+    margin-left:0px;
+}
+
+ form{
+     margin-top:20px;
+ }
+
+ form .row{
+    margin-left:15%;
+ }
+
+ input[type=checkbox]{
+     width:1.8%;
+     height: 15px;
+     
+ }
+
+ .submit-btn{
+     width:20%;
+     padding-top:5px;
+     margin-left:0px;
+
+ }
+
+ input[type=submit]{
+     margin-left:0px;
+     width:18%;
+     height:45px;
+     padding-top:10px;
+ }
+
+ footer{
+     margin-top:60px;
+     background-color:rgb(46, 46, 46);
+     font-size:16px;
+     
+ }
+ .footer-nav, .social-links{
+     list-style-type: none;
+     
+ }
+ .social-links i, .footer-nav a{
+    color:rgb(107, 107, 107);
+    text-transform: capitalize;
+    float:left;
+    margin-top:30px;
+    margin-left:20px;
+    margin-bottom:30px;
+ }
+
+ .social-links{
+     width:30%;
+     float:right;
+ }
+
+
+
+ .copy{
+     text-align:center;
+ }
+
+ .copy:last-child{ 
+     margin-bottom:30px;
+ }
